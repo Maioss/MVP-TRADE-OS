@@ -1,0 +1,219 @@
+.boton-circular {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #444;
+    background-color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-circular.encendido {
+    background-color: var(--color-naranja);
+    border-color: #fff;
+    box-shadow: 0 0 15px var(--color-naranja);
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.barra-navegacion {
+    background-color: var(--color-nav-bg);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--borde-suave);
+    transition: all 0.4s ease;
+}
+
+.logo-marca {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-naranja);
+}
+
+.enlaces-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.enlaces-nav a {
+    text-decoration: none;
+    color: var(--color-texto);
+    transition: color 0.3s;
+}
+
+.enlaces-nav a:hover {
+    color: var(--color-secundario);
+}
+
+.contenido {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.cuadricula {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tarjeta {
+    background-color: var(--color-tarjeta);
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: var(--sombra-tarjeta);
+    transition: all 0.3s ease;
+    border: 1px solid var(--borde-suave);
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-hover);
+}
+
+.titulo-seccion {
+    color: var(--color-secundario);
+    margin: 0 0 20px 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.texto-precio {
+    font-size: 32px;
+    color: var(--color-naranja);
+    margin: 15px 0;
+}
+
+.boton-accion {
+    background-color: var(--color-naranja);
+    color: #000;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.boton-accion:hover {
+    background-color: var(--color-naranja-hover);
+}
+
+.boton-accion:disabled {
+    background-color: #4b5563;
+    color: #9ca3af;
+    opacity: 0.6;
+}
+
+.tabla-precios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--borde-suave);
+}
+
+.tabla-precios th {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--color-texto-tenue);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 12px;
+}
+
+.tabla-precios td {
+    padding: 12px;
+    border-bottom: 1px solid var(--borde-suave);
+    color: var(--color-texto);
+    font-weight: 500;
+}
+
+.contenedor-link {
+    margin-top: 15px;
+}
+
+.contenedor-link a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.contenedor-link a:hover {
+    text-decoration: underline;
+}
+
+.caja-comentario {
+    margin-bottom: 20px;
+}
+
+.input-texto {
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--borde-suave);
+    color: var(--color-texto);
+    padding: 12px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.lista-comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.item-comentario {
+    background: var(--fondo-comentario);
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid var(--color-secundario);
+    border-top: 1px solid var(--borde-suave);
+    border-right: 1px solid var(--borde-suave);
+    border-bottom: 1px solid var(--borde-suave);
+}
+
+.item-comentario p {
+    color: var(--color-texto);
+    margin: 0;
+}
+
+.contenedor-boton {
+    margin-top: 10px;
+    text-align: right;
+    color: var(--color-texto-tenue);
+}
+
+.footer-pagina {
+    background-color: var(--color-footer-bg);
+    padding: 30px;
+    text-align: center;
+    margin-top: auto;
+    color: var(--color-texto-tenue);
+    border-top: 1px solid var(--borde-suave);
+    transition: all 0.4s ease;
+}

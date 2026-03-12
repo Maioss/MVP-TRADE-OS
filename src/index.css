@@ -1,0 +1,35 @@
+:root {
+  --color-fondo: #0f172a;
+  --color-tarjeta: #1e293b;
+  --color-naranja: #ffaf1b;
+  --color-naranja-hover: #e59a17;
+  --color-secundario: #8b5cf6;
+  --color-texto: #f8fafc;
+  --color-texto-tenue: #94a3b8;
+  --color-nav-bg: #130f2a;
+  --color-footer-bg: #130f2a;
+  --borde-suave: rgba(255, 255, 255, 0.05);
+  --fondo-comentario: rgba(255, 255, 255, 0.03);
+  --sombra-tarjeta: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --sombra-hover: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modo-claro {
+  --color-fondo: #edf2f7;
+  --color-tarjeta: #f8fafc;
+  --color-texto: #1a202c;
+  --color-texto-tenue: #4a5568;
+  --color-secundario: #5a67d8;
+  --fondo-comentario: #e2e8f0;
+  --color-nav-bg: #f8fafc;
+  --color-footer-bg: #f8fafc;
+  --borde-suave: #cbd5e1;
+  --sombra-tarjeta: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --sombra-hover: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
