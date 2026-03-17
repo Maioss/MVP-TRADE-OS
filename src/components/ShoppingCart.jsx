@@ -9,8 +9,6 @@ const cartItems = [
 export default function ShoppingCart() {
     const [pagado, setPagado] = useState(false);
 
-    const total = cartItems.reduce((acc, item) => acc + item.precio, 0);
-
     if (pagado) {
         return (
             <section className="tarjeta">
@@ -23,10 +21,9 @@ export default function ShoppingCart() {
     return (
         <section className="tarjeta">
             <h2 className="titulo-seccion">Orden de Compra</h2>
-            <p>Total a pagar: <strong>${total.toLocaleString()} USD</strong></p>
-            <ul>
+            <ul className="cart-list">
                 {cartItems.map((item) => (
-                    <li key={item.id}>{item.nombre} - ${item.precio.toLocaleString()} USD</li>
+                    <li key={item.id} className="cart-item">{item.nombre} - ${item.precio.toLocaleString()} USD</li>
                 ))}
             </ul>
             <button className="boton-accion" onClick={() => setPagado(true)}>

@@ -208,6 +208,22 @@
     color: var(--color-texto-tenue);
 }
 
+.cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.cart-item {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--borde-suave);
+}
+
+.media-post-wrapper {
+    margin-top: 20px;
+}
+
 .footer-pagina {
     background-color: var(--color-footer-bg);
     padding: 30px;

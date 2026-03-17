@@ -21,7 +21,9 @@ function App() {
         </div>
 
         <MediaPost />
-        <ShoppingCart />
+        <div style={{ marginTop: '20px' }}>
+          <ShoppingCart />
+        </div>
       </main>
 
       <FooterP />
