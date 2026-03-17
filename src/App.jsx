@@ -4,6 +4,7 @@ import FooterP from "./components/Footer";
 import MediaPost from "./components/MediaPost";
 import BitcoinPrice from "./components/BitcoinPrice";
 import PriceHistory from "./components/PriceHistory";
+import ShoppingCart from "./components/ShoppingCart";
 import "./App.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         </div>
 
         <MediaPost />
+        <ShoppingCart />
       </main>
 
       <FooterP />
