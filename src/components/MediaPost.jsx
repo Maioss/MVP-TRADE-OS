@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import Card from './Card';
+import Button from './Button';
 
 export default function MediaPost() {
     const [texto, setTexto] = useState('');
     const [comentarios, setComentarios] = useState([
-        { id: 1, contenido: "Un buen precio, recomiendo comprar." }
+        { id: 1, contenido: "CrikoCoin a un buen precio, recomiendo comprar." }
     ]);
 
     const agregarComentario = () => {
@@ -14,8 +16,7 @@ export default function MediaPost() {
     };
 
     return (
-        <section className="tarjeta">
-            <h2 className="titulo-seccion">Foro de Inversores</h2>
+        <Card titulo="Foro de Inversores">
 
             <div className="caja-comentario">
                 <textarea
@@ -26,14 +27,11 @@ export default function MediaPost() {
                 />
                 <div className="contenedor-boton" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <small>{280 - texto.length} caracteres</small>
-                    <button
-                        className="boton-accion"
+                    <Button
+                        texto="Publicar"
                         onClick={agregarComentario}
-                        style={{ width: 'auto' }}
                         disabled={texto === ''}
-                    >
-                        Publicar
-                    </button>
+                    />
                 </div>
             </div>
 
@@ -44,6 +42,6 @@ export default function MediaPost() {
                     </div>
                 ))}
             </div>
-        </section>
+        </Card>
     );
 }
